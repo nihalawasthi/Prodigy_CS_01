@@ -26,10 +26,11 @@ def cc_decrypt(etext, shift):
 
 
 text = input("enter text")
-shift = 3
+shift = input("enter shift")
 etext = cc_encrypt(text, shift)
 print("Encrypted:", etext)
 
 entext = input("enter encrypted text")
+shift = input("enter shift")
 decrypted_text = cc_decrypt(entext, shift)
 print("Decrypted:", decrypted_text)
