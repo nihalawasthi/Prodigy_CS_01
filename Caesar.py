@@ -29,5 +29,10 @@ def decrypt():
     return decrypted_text
 
 while True:
-    encrypt()
-    decrypt()
+    action = input("Enter 'E' for encryption or 'D' for decryption: ")
+    if action == 'E':
+        encrypt()
+    elif action == 'D':
+        decrypt()
+    else:
+        print("Invalid Choice")
