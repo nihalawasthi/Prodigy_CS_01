@@ -1,6 +1,8 @@
-#2 Caesar Cipher
+# Caesar Cipher
 
-def cc_encrypt(text, shift):
+def encrypt():
+    text = input("enter text : ")
+    shift = input("enter shift : ")
     etext = ""
     for char in text:
         if char.isalpha():
@@ -12,7 +14,9 @@ def cc_encrypt(text, shift):
             etext += char
     return etext
 
-def cc_decrypt(etext, shift):
+def decrypt():
+    etext = input("enter etext : ")
+    shift = input("enter shift : ")
     decrypted_text = ""
     for char in etext:
         if char.isalpha():
@@ -24,13 +28,6 @@ def cc_decrypt(etext, shift):
             decrypted_text += char
     return decrypted_text
 
-
-text = input("enter text")
-shift = input("enter shift")
-etext = cc_encrypt(text, shift)
-print("Encrypted:", etext)
-
-entext = input("enter encrypted text")
-shift = input("enter shift")
-decrypted_text = cc_decrypt(entext, shift)
-print("Decrypted:", decrypted_text)
+while True:
+    encrypt()
+    decrypt()
